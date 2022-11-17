@@ -1,0 +1,146 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Poppins', sans-serif;
+	color:white;
+}
+body{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+p{
+	font-size:1rem;
+}
+.body{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	
+}
+.container{
+	width:450px;
+	background-color:black;
+	padding:30px;
+	border-radius:10px;
+	
+}
+.inner-box{
+	border:2px solid white;
+	border-radius:10px;
+	padding:25px 10px;
+	position:relative;
+}
+.inner-box .brand{
+	position:absolute;
+	left:4px;
+	top:4px;
+	font-size:5px;
+}
+.d-cont,.time-cont{
+	display:flex;
+	flex-wrap:wrap;
+	margin:0px 0px 20px 0px;
+}
+
+.d-cont{
+	display:flex;
+	justify-content:space-around;
+}
+
+.temp-box{
+	display:inline-block;
+}
+.cal-1 .d-box,.y-box{
+	
+	padding:5px 5px;
+	text-align:center;
+}
+.cal-2{
+	text-align:center;
+}
+.time-cont .t-box{
+	padding:10px;
+}
+.time-cont > span{
+	display:inline-block;
+	padding:10px;
+}
+.dot{
+	background-color:white;
+	width:8px;
+	height:8px;
+	border-radius:50%;
+	margin:10px 8px 10px 8px;
+}
+.time-cont .light{
+	background-color:red;
+	box-shadow:0 0 10px red,
+				0 0 20px red,
+				0 0 40px red,
+				0 0 80px red,
+				0 0 160px red;
+}
+.bg{
+	background-color:#7e7878b0;
+	border-radius:3px;
+}
+.ls{
+	letter-spacing:10px;
+	color:red;
+	text-shadow:0 0 10px red,
+				0 0 20px red,
+				0 0 40px red,
+				0 0 80px red,
+				0 0 160px red;
+}
+.temp-cont{
+	text-align:center;
+	margin-bottom:25px;
+}
+.temp-box{
+	padding:0px 4px;
+}
+.weeks span{
+	position:relative;
+	margin:0px 8px;
+	padding-top:10px;
+}
+.weeks .active:after{
+	content:"";
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	background-color:white;
+	position:absolute;
+	left:50%;
+	right:50%;
+	top:0;
+	transform:translate(-50%, -50%);
+}
+.t-box{
+	width:50px;
+}
+.s-box{
+	width:55px;
+}
+.day.active:after{
+	background-color:red;
+	box-shadow:0 0 10px red,
+				0 0 20px red,
+				0 0 40px red,
+				0 0 80px red,
+				0 0 160px red;
+}
+.hours.active{
+	background-color:red;
+	box-shadow:0 0 10px red,
+				0 0 20px red,
+				0 0 40px red,
+				0 0 80px red,
+				0 0 160px red;
+}
+
+
+
