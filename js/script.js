@@ -19,10 +19,23 @@ function updateTime(){
 		hours = dateObject.getHours(),
 		minutes = dateObject.getMinutes(),
 		seconds = dateObject.getSeconds();
-		hoursElement.innerText = parseNumber(hours);
+		hoursElement.innerText = parseHour(hours);
 		minutesElement.innerText = parseNumber(minutes);
 		secondsElement.innerText = parseNumber(seconds);
-		
+}
+
+function parseHour(hours){
+	if(hours <= 12){
+		if(hours< 10){
+			return '0'+hours;
+		}else{
+			return hours;
+		}
+	}else{
+		hours -= 12;
+		return hours
+	}
+	
 }
 
 function parseNumber(number){
@@ -78,7 +91,7 @@ var h= new Date();
 
 var currentHour=h.getHours();
 
-if(currentHour > 12){
+if(currentHour >= 12){
 	document.getElementById('pm').classList.add('hours');
 }else{
 	document.getElementById('am').classList.add('hours');
